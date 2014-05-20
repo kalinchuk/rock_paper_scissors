@@ -1,0 +1,7 @@
+- if params[:sign] == signs.shuffle.first
+  .alert.alert-success You have won!
+- else
+  .alert.alert-danger Please try again
+
+%p
+  = link_to 'New game', new_throw_path, class: 'btn btn-default'
