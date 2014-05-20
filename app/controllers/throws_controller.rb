@@ -1,10 +1,10 @@
 class ThrowsController < ApplicationController
   # @!group Exposures
 
-  # @!attribute signs
-  # The signs that are available to throw.
-  # @return [Array]
-  expose(:signs) { %w(rock paper scissors) }
+  # @!attribute _throw
+  # The current throw.
+  # @return [Throw]
+  expose(:_throw) { Throw.new(params[:sign]) }
 
   # @!group Actions
 

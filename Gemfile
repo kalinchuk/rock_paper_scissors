@@ -9,8 +9,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'decent_exposure'
 gem 'twitter-bootstrap-rails'
+gem 'decent_exposure'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development do

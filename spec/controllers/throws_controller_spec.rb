@@ -2,12 +2,10 @@ describe ThrowsController do
   let(:params) { {} }
 
   describe "exposures" do
-    describe "signs" do
-      subject { controller.signs }
+    describe "_throw" do
+      subject { controller._throw }
 
-      it { should include 'rock' }
-      it { should include 'paper' }
-      it { should include 'scissors' }
+      it { should be_a Throw }
     end
   end
 

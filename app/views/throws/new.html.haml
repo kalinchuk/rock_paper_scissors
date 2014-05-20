@@ -1,6 +1,6 @@
 = form_tag throws_path do
   .form-group
-    = select_tag :sign, options_for_select(signs), prompt: 'Select sign', class: 'form-control'
+    = select_tag :sign, options_for_select(Throw.signs), prompt: 'Select sign', class: 'form-control'
 
   .form-actions
     = submit_tag 'Throw', class: 'btn btn-primary'

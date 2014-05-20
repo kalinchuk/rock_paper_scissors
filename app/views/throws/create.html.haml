@@ -1,7 +1,17 @@
-- if params[:sign] == signs.shuffle.first
+- case _throw.result
+- when :win
   .alert.alert-success You have won!
-- else
-  .alert.alert-danger Please try again
+- when :tie
+  .alert.alert-warning It was a tie.
+- when :lose
+  .alert.alert-danger Please try again.
+
+%p
+  Computer pick:
+  %strong= _throw.random
+  %br
+  Your pick:
+  %strong= _throw.sign
 
 %p
   = link_to 'New game', new_throw_path, class: 'btn btn-default'
